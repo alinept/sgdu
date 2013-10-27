@@ -14,7 +14,9 @@ import br.ufma.sgdu.util.MD5;
  * administradores e extrair os dados referente a eles do banco para o sistema.
  */
 public class DbAccGate {
-	
+	/**
+	Comentário de Hans!!!
+	*/
 	private String user = null;
 	private String passwd = null;
 	
