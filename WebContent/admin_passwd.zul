@@ -1,0 +1,135 @@
+<?page title="SGDU - Painel de Controle do Administrador" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window border="none" id="winAdmin" width="100%" use="br.ufma.sgdu.window.AdminPasswordWindow">
+<div align="center">
+<groupbox width="780px" height="400px" id="groupbox">
+<div>
+<separator height="15px"/>
+<tablelayout columns="4" width="780px">
+	<tablechildren width="75px">
+		<panel>
+			<panelchildren>
+				<hbox>
+					<separator width="20px"/>
+					<image src="images/logoufma.png" width="80px" height="80px"/>
+				</hbox>
+			</panelchildren>
+		</panel>
+	</tablechildren>
+	
+	<tablechildren width="400px">
+		<panel>
+			<panelchildren>
+			<hbox>
+				<separator width="10px"/>
+				<vbox>
+					<separator />
+					<label value="Universidade Federal do Maranhão"
+					style="font-size:17px;font-weight: bold; text-shadow:3px 3px 2px #c9a859"/>
+					<label value="Portal de Normas e Legislações"
+					style="font-size:18px; color:gray; font-weight: bold"/>
+				</vbox>	
+			</hbox>
+			</panelchildren>
+		</panel>
+	</tablechildren>
+	
+	<tablechildren>
+		<panel>
+			<panelchildren>
+			  <div align="right">
+			  <separator/>
+			  <vbox>	
+				<hbox>
+				    <image src="images/user.png"/>
+				    <label value="" style="font-weight:bold; color:gray;" id="admTypeLabel"/>
+					<label value="" style="font-weight:bold; color:gray;" id="admNameLabel"/>	
+				</hbox>
+				<div align="right">
+					<button label="Sair" onClick="winAdmin.logOut()"/>
+			   	</div>
+			  </vbox>
+			  </div>
+			</panelchildren>
+		</panel>
+	</tablechildren>
+	
+	<tablechildren width="20px">
+		<panel>
+			<panelchildren>
+				<separator height="50px" width="10px"/>			
+			</panelchildren>
+		</panel>
+	</tablechildren>		   		
+</tablelayout>
+</div>
+
+<separator height="10px"/>
+
+<div align="left">
+<menubar>
+	<menu label="Cadastro">
+		<menupopup>
+			<menuitem label="Alterar minha senha" onClick="winAdmin.changePassword()"/>
+			<menuitem label="Cadastrar outro administrador" onClick="winAdmin.accCreate()"/>
+			<menuitem label="Editar cadastro de administrador" onClick="winAdmin.accEdit()"/>
+			<menuitem label="Excluir cadastro de administrador" onClick="winAdmin.accRemove()"/>
+			<menuitem label="Excluir minha conta" onClick="winAdmin.deleteAccount()"/>
+		</menupopup>
+	</menu>
+	<menu label="Enviar novo documento">
+		<menupopup>
+			<menuitem label="Fazer upload de arquivo" onClick="winAdmin.upload()"/>
+			<menuitem label="Abrir editor de texto" onClick="winAdmin.textEditor()"/>
+		</menupopup>
+	</menu>
+</menubar>
+
+<separator height="20px"/>
+
+<div align="center">
+	<groupbox style="border-color: #C2E8FF">
+		<caption label="Senha Atual"/>
+		<grid style="border-color: white;">
+			<columns style="background: white;">
+				<column label="Digite sua senha atual:" align="right"/>
+				<column>
+					<textbox type="password" id="actualPasswdTextBox"/>
+				</column>
+			</columns>
+		</grid>
+	</groupbox>
+	<separator width="10px"/>
+	<groupbox style="border-color: #C2E8FF">
+		<caption label="Nova Senha"/>
+		
+		<grid style="border-color: white;">
+		<columns style="background: white;">
+			<column align="right">
+				<vbox>
+					<label value="Digite a nova senha:"/>
+					<label value="Repita a nova senha:"/>
+				</vbox>
+			</column>
+			<column>
+				<vbox>
+					<textbox type="password" id="newPasswdTextBox1"/>
+					<textbox type="password" id="newPasswdTextBox2"/>
+				</vbox>
+			</column>
+		</columns>
+		</grid>
+	</groupbox>
+	<separator height="10px"/>
+	<div align="left">   
+    	<button label="Voltar" image="images/voltar.png" onClick="winAdmin.goBack()"/>
+	</div>
+	<separator height="25px"/>
+	<button label="Alterar Senha" style="font-size:14px" onClick="winAdmin.changePasswd()"/>
+</div>
+
+</div>
+</groupbox>
+</div>
+</window>
+</zk>

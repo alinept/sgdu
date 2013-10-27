@@ -1,0 +1,11 @@
+<?page title="SGDU - Visualizador de HTML" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Portal de Normas e Resoluções - UFMA - Visualizador de Documento" border="normal" id="htmlWindow" use="br.ufma.sgdu.window.HtmlViewer">
+	<div align="left">   
+    	<button label="Voltar" image="images/voltar.png" action='onclick:history.back()'/>
+	</div>
+	<separator height="30px"/>
+	<html id="htmlField">
+	</html>
+</window>
+</zk>

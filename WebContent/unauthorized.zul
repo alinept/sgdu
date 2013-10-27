@@ -1,0 +1,24 @@
+<?page title="SGDU - Acesso não autorizado" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="http://www.w3.org/1999/xhtml">
+<window border="none">
+	<div align="center">
+			<label value="SGDU - Acesso não autorizado"
+				style="font-size:25px; color:black; font-weight: bold; font-style:italic;
+						text-shadow:3px 3px 2px gray"/>
+	</div> 
+	<separator height="20px"/>
+	<div align="center">
+		<label value="A página ou recurso que você está tentando acessar não está disponível."
+		style="font-size:14px; color:red; font-weight: bold"/>
+	</div>
+	<div align="center">
+		<label value="Isto é normalmente causado por falha no login ou timeout." style="font-size:14px; color:black"/>
+	</div>
+	<separator height="10px"/>
+	<div align="center">
+	<h:a href="index.zul" width="250px" height="250px" style="font-size:14px; color:black">
+		Clique aqui para ir à página inicial
+	</h:a>
+	</div>
+</window>
+</zk>

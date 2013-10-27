@@ -1,0 +1,61 @@
+package br.ufma.sgdu.window;
+
+import org.zkoss.zk.ui.Executions;
+import org.zkoss.zul.Messagebox;
+
+/**
+ * <b>AdminWindow</b><br/>
+ * Classe que gerencia a interface web da pagina inicial do administrador, onde o mesmo tem
+ * acesso as seus privilegios. Entre suas principais funcoes estao:
+ * redirecionar o administrador para a interface correspondente a opcao desejada e requisitar
+ * o logout do usuario para o sistema.
+ */
+public class AdminWindow extends SGDUSecureWindow{
+
+	private static final long serialVersionUID = 3055319891648164746L;
+	
+	@Override
+	public void onCreate() {
+		super.onCreate();
+	}
+	
+	/**
+	 * Botão "Pesquisar"
+	 */
+	public void adminSearch(){
+		if( !authenticated ){
+			Executions.sendRedirect("/unauthorized.zul");
+			return;
+		}
+		//TODO
+	}
+	
+	/**
+	 * Botão "Mostrar Todos"
+	 */
+	public void adminShowAll(){
+		if( !authenticated ){
+			Executions.sendRedirect("/unauthorized.zul");
+			return;
+		}
+		//TODO
+	}
+	
+	/**
+	 * Botão "?"
+	 */
+	public void adminHelp(){
+		if( !authenticated ){
+			Executions.sendRedirect("/unauthorized.zul");
+			return;
+		}
+		try {
+			Messagebox.show("Digite as palavras a serem pesquisadas na caixa de texto.\n" +
+					"Elas serão procuradas no título e descrição dos documentos que você " +
+					"tem permissão para alterar e então serão exibidos na tabela abaixo.",
+					"Ajuda de Pesquisa",Messagebox.OK, Messagebox.INFORMATION);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+}

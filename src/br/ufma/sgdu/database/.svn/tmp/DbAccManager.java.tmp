@@ -1,0 +1,104 @@
+package br.ufma.sgdu.database;
+
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+
+import br.ufma.sgdu.entity.Administrator;
+import br.ufma.sgdu.util.MD5;
+
+/**
+ * <b>DbAccManager</b><br/>
+ * Classe de controle que gerencia contas do banco de dados.
+ * Algumas de suas funcoes sao: cadastro, remocao e edicao de contas.
+ */
+public class DbAccManager {
+	
+	private Statement statement;
+	
+	public DbAccManager() throws Exception{
+		statement = DatabaseConnection.get().createStatement();
+	}
+	
+	/**
+	 * Checa se um determinado login ja esta cadastrado no banco.
+	 * @param login VARCHAR que contem o login a ser pesquisado no banco
+	 */
+	public boolean loginExists(String login){
+		ResultSet loginResultSet;
+		try {
+			loginResultSet = statement.executeQuery("SELECT * FROM administrador WHERE " +
+					"login = '" + login + "';");
+			return loginResultSet.next();
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
+	
+	/**
+	 * Insere um novo administrador no banco.
+	 * @param login VARCHAR
+	 * @param type SMALLINT
+	 * @param name VARCHAR
+	 * @param email VARCHAR
+	 * @param comment VARCHAR
+	 * @param password VARCHAR (nao-criptografada)
+	 * @throws SQLException 
+	 */
+	public void insertAdministrator(String login, short type, String name, String email,
+			String comment, String password) throws SQLException{
+		statement.execute("INSERT INTO administrador (login, tipo, nome, email, comentario, " +
+				"senha_md5) VALUES ('" + login + "', " + type + ", '" + name + "', '" +
+				email + "', '" + comment + "', '" + MD5.get(password) + "');" );
+	}
+	
+	/**
+	 * Altera a senha de um administrador.
+	 * @param login VARCHAR
+	 * @param md5Password VARCHAR senha atual (criptografada)
+	 * @param newPassword VARCHAR nova senha (nao-criptografada)
+	 * @throws SQLException 
+	 */
+	public void updatePassword(String login, String md5Password, String newPassword)
+			throws SQLException{
+		statement.executeUpdate("UPDATE administrador SET senha_md5 = '" +
+				MD5.get(newPassword) + "' WHERE login = '" + login + "' AND senha_md5 = '" +
+				md5Password + "';");
+	}
+	
+	/**
+	 * Remove um administrador do banco.
+	 * @param login VARCHAR
+	 * @param md5Password VARCHAR (criptografada)
+	 * @throws SQLException
+	 */
+	public void deleteAdministrator(String login, String md5Password) throws SQLException{
+		statement.execute("DELETE FROM administrador WHERE login = '" +
+				login + "' AND senha_md5 = '" +	md5Password + "';");
+	}
+	
+	/**
+	 * Retorna todos os administradores cadastrados no banco.
+	 */
+	public ArrayList<Administrator> getAdministrators() throws SQLException{
+		ArrayList<Administrator> arrayList = new ArrayList<Administrator>();
+		ResultSet admResultSet;
+		
+		admResultSet = statement.executeQuery("SELECT * FROM administrador ORDER BY nome ASC;");
+		
+		while( admResultSet.next() ){
+			String login = admResultSet.getString("login");
+			short type = admResultSet.getShort("tipo");
+			String name = admResultSet.getString("nome");
+			String email = admResultSet.getString("email");
+			String comment = admResultSet.getString("comentario");
+			String md5Passwd = admResultSet.getString("senha_md5");
+			
+			arrayList.add( new Administrator(login, type, name, email, comment, md5Passwd) );
+		}
+		
+		return arrayList;
+	}
+}

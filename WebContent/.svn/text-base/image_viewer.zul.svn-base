@@ -1,0 +1,29 @@
+<?page title="SGDU - Visualizador de Imagens" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="Portal de Normas e Resoluções - UFMA - Visualizador de Documento" border="normal" id="imageWindow" use="br.ufma.sgdu.window.ImageViewer" width="100%">
+	<vbox width="100%" align="center">
+	<grid style="border-color: white">
+		<columns>
+			<column align="left"/>
+			<column align="right"/>
+		</columns>
+		<rows style="border-color: white;">
+			<row style="border-color: white;">
+				<button label="Voltar" image="images/voltar.png" onClick="imageWindow.goBack()"/>
+				<hbox>
+					<button image="images/zoomout.gif" onClick="imageWindow.zoomOut()" id="zoomOutButton"/>
+    				<button image="images/zoomin.gif" onClick="imageWindow.zoomIn()" id="zoomInButton"/>
+				</hbox>
+			</row>
+		</rows>
+	</grid>
+	
+	<div align="center">
+		<button label="Página anterior" id="previousButton" disabled="true" onClick="imageWindow.previous()"/>
+		<button label="Próxima página" id="nextButton" onClick="imageWindow.next()"/>
+	</div>
+	<separator height="10px"/>
+	<image id="imageField" width="99%"/>
+	</vbox>
+</window>
+</zk>

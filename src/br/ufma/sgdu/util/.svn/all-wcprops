@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/10/trunk/sgdu/src/br/ufma/sgdu/util
+END
+Reader2StringConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/14/trunk/sgdu/src/br/ufma/sgdu/util/Reader2StringConverter.java
+END
+DocumentAnalizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/14/trunk/sgdu/src/br/ufma/sgdu/util/DocumentAnalizer.java
+END
+MD5.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/5/trunk/sgdu/src/br/ufma/sgdu/util/MD5.java
+END
+InputStream2ByteConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/14/trunk/sgdu/src/br/ufma/sgdu/util/InputStream2ByteConverter.java
+END
+FileSupportVerificator.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/14/trunk/sgdu/src/br/ufma/sgdu/util/FileSupportVerificator.java
+END

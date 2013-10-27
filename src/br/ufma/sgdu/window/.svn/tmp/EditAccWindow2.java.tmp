@@ -1,0 +1,60 @@
+package br.ufma.sgdu.window;
+
+import org.zkoss.zk.ui.Executions;
+import org.zkoss.zul.Label;
+import org.zkoss.zul.Radiogroup;
+import org.zkoss.zul.Textbox;
+
+import br.ufma.sgdu.entity.Administrator;
+
+public class EditAccWindow2 extends SGDUSecureWindow {
+
+	private static final long serialVersionUID = -3141515418153250289L;
+	private Administrator administrator = null;
+	
+	@Override
+	public void onCreate() {
+		super.onCreate();
+		if( !dbAccGate.getAdministrator().isSuperAdministrator() ){
+			Executions.sendRedirect("/admin_main.zul");
+			return;
+		}
+		Object adm = Executions.getCurrent().getDesktop().getSession().getAttribute("admEdit");
+		if( adm!= null && adm instanceof Administrator){
+			administrator = (Administrator)adm;
+		}
+		else{
+			Executions.sendRedirect("/admin_main.zul");
+			return;
+		}
+		((Label)getFellow("loginLabel")).setValue( administrator.getLogin() );
+		((Textbox)getFellow("nameTextBox")).setValue( administrator.getName() );
+		((Textbox)getFellow("emailTextBox")).setValue( administrator.getEmail() );
+		((Textbox)getFellow("commentTextBox")).setValue( administrator.getComment() );
+		if( administrator.isCommomAdministrator() ){
+			((Radiogroup)getFellow("typeAccRadioGroup")).getItemAtIndex(0).setChecked(true);
+		}
+		else if( administrator.isSuperAdministrator() ){
+			((Radiogroup)getFellow("typeAccRadioGroup")).getItemAtIndex(1).setChecked(true);
+		}
+	}
+	
+	/**
+	 * Botao "Voltar"
+	 */
+	public void goBack(){
+		if( !authenticated ){
+			Executions.sendRedirect("/unauthorized.zul");
+			return;
+		}
+		Executions.getCurrent().getDesktop().getSession().removeAttribute("admEdit");
+		Executions.sendRedirect("/admin_editacc.zul");
+	}
+	
+	/**
+	 * Botao "Atualizar Cadastro"
+	 */
+	public void atualize(){
+		//TODO
+	}
+}

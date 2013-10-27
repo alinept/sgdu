@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/lexer
+END
+Lexer.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/lexer/Lexer.java
+END
+PageAttribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/lexer/PageAttribute.java
+END
+Source.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/lexer/Source.java
+END
+PageIndex.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/lexer/PageIndex.java
+END
+StringSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/lexer/StringSource.java
+END
+Stream.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/lexer/Stream.java
+END
+InputStreamSource.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/lexer/InputStreamSource.java
+END
+Page.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/lexer/Page.java
+END
+Cursor.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/lexer/Cursor.java
+END

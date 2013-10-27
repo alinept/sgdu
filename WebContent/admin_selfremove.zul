@@ -1,0 +1,124 @@
+<?page title="SGDU - Painel de Controle do Administrador" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window border="none" id="winAdmin" width="100%" use="br.ufma.sgdu.window.AdminSelfRemoveWindow">
+<div align="center">
+<groupbox width="780px" height="450px" id="groupbox">
+<div>
+<separator height="15px"/>
+<tablelayout columns="4" width="780px">
+	<tablechildren width="75px">
+		<panel>
+			<panelchildren>
+				<hbox>
+					<separator width="20px"/>
+					<image src="images/logoufma.png" width="80px" height="80px"/>
+				</hbox>
+			</panelchildren>
+		</panel>
+	</tablechildren>
+	
+	<tablechildren width="400px">
+		<panel>
+			<panelchildren>
+			<hbox>
+				<separator width="10px"/>
+				<vbox>
+					<separator />
+					<label value="Universidade Federal do Maranhão"
+					style="font-size:17px;font-weight: bold; text-shadow:3px 3px 2px #c9a859"/>
+					<label value="Portal de Normas e Legislações"
+					style="font-size:18px; color:gray; font-weight: bold"/>
+				</vbox>	
+			</hbox>
+			</panelchildren>
+		</panel>
+	</tablechildren>
+	
+	<tablechildren>
+		<panel>
+			<panelchildren>
+			  <div align="right">
+			  <separator/>
+			  <vbox>	
+				<hbox>
+				    <image src="images/user.png"/>
+				    <label value="" style="font-weight:bold; color:gray;" id="admTypeLabel"/>
+					<label value="" style="font-weight:bold; color:gray;" id="admNameLabel"/>	
+				</hbox>
+				<div align="right">
+					<button label="Sair" onClick="winAdmin.logOut()"/>
+			   	</div>
+			  </vbox>
+			  </div>
+			</panelchildren>
+		</panel>
+	</tablechildren>
+	
+	<tablechildren width="20px">
+		<panel>
+			<panelchildren>
+				<separator height="50px" width="10px"/>			
+			</panelchildren>
+		</panel>
+	</tablechildren>		   		
+</tablelayout>
+</div>
+
+<separator height="10px"/>
+
+<div align="left">
+<menubar>
+	<menu label="Cadastro">
+		<menupopup>
+			<menuitem label="Alterar minha senha" onClick="winAdmin.changePassword()"/>
+			<menuitem label="Cadastrar outro administrador" onClick="winAdmin.accCreate()"/>
+			<menuitem label="Editar cadastro de administrador" onClick="winAdmin.accEdit()"/>
+			<menuitem label="Excluir cadastro de administrador" onClick="winAdmin.accRemove()"/>
+			<menuitem label="Excluir minha conta" onClick="winAdmin.deleteAccount()"/>
+		</menupopup>
+	</menu>
+	<menu label="Enviar novo documento">
+		<menupopup>
+			<menuitem label="Fazer upload de arquivo" onClick="winAdmin.upload()"/>
+			<menuitem label="Abrir editor de texto" onClick="winAdmin.textEditor()"/>
+		</menupopup>
+	</menu>
+</menubar>
+
+<separator height="20px"/>
+
+<div align="center">
+	<vbox align="start" width="555px">
+		<div align="center">
+		<label value="Deseja realmente excluir sua conta de administrador?"
+		style="font-size:18px; color:red; font-weight: bold"/>
+		</div>
+		<separator height="30px"/>
+		<label value="Ao término deste processo não será mais possível realizar
+						login no sistema com esta conta."/>
+		<label value="Se você estiver interessado em alterar somente sua senha
+					não há necessidade de remover sua conta, você poderá fazê-lo no menu
+					Cadastro > Alterar Minha Senha."/>
+		<label value="Se você precisar alterar outras informações de sua conta, como nome,
+					e-mail, etc," id="solutionLabel"/>
+		<separator height="30px"/>
+		
+		<div align="center">
+		<hbox>
+			<label value="Digite sua senha para confirmação:"/>
+			<textbox type="password" id="passwdTextBox"/>
+		</hbox>
+		<button label="Excluir Minha Conta" style="font-size:14px;" onClick="winAdmin.removeMyAcc()"/>
+		</div>
+	</vbox>
+	
+	<separator height="20px"/>
+	<div align="left">   
+    	<button label="Voltar" image="images/voltar.png" onClick="winAdmin.goBack()"/>
+	</div>
+</div>
+</div>
+</groupbox>
+</div>
+</window>
+</zk>

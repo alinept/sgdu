@@ -1,0 +1,87 @@
+package br.ufma.sgdu.window;
+
+import org.zkoss.zk.ui.Executions;
+import org.zkoss.zul.Label;
+import org.zkoss.zul.Messagebox;
+import org.zkoss.zul.Textbox;
+
+import br.ufma.sgdu.database.DbAccManager;
+import br.ufma.sgdu.util.MD5;
+
+public class AdminSelfRemoveWindow extends SGDUSecureWindow {
+
+	private static final long serialVersionUID = 499553974228574710L;
+	
+	public void onCreate(){
+		super.onCreate();
+		Label solutionLabel = (Label)getFellow("solutionLabel");
+		if( dbAccGate.getAdministrator().isSuperAdministrator() ){
+			solutionLabel.setValue(solutionLabel.getValue() + " vá no menu Cadastro >" +
+					" Editar cadastro de administrador e modifique os dados " +
+					"referentes à sua conta.");
+		}
+		else if( dbAccGate.getAdministrator().isCommomAdministrator() ){
+			solutionLabel.setValue(solutionLabel.getValue() + " contate um super " +
+					"administrador do sistema.");
+		}
+	}
+	
+	/**
+	 * Botao Excluir minha conta
+	 */
+	public void removeMyAcc() throws Exception{
+		if( !authenticated ){
+			Executions.sendRedirect("/unauthorized.zul");
+			return;
+		}
+		Textbox passwdTextBox = (Textbox)getFellow("passwdTextBox");
+		String passwd = passwdTextBox.getValue();
+		if( dbAccGate.getAdministrator().getMd5Passwd().equals( MD5.get(passwd) )){
+			int op;
+			try{
+				op = Messagebox.show("Ao clicar em OK sua conta será definitivamente " +
+						"excluída. Essa operação é irreversível!",
+						"Excluir Conta",Messagebox.OK | Messagebox.CANCEL,
+						Messagebox.EXCLAMATION);
+			}
+			catch (InterruptedException e) {
+				e.printStackTrace();
+				return;
+			}
+			if( op == Messagebox.OK ){
+				/*
+				Statement statement = DatabaseConnection.get().createStatement();
+				statement.execute("DELETE FROM administrador WHERE login = '" +
+						dbAccGate.getAdministrator().getLogin() + "' AND senha_md5 = '" +
+						dbAccGate.getAdministrator().getMd5Passwd() + "';");
+				*/
+				DbAccManager dbAccManager = new DbAccManager();
+				dbAccManager.deleteAdministrator(dbAccGate.getAdministrator().getLogin(),
+						dbAccGate.getAdministrator().getMd5Passwd() );
+				
+				try {
+					Messagebox.show("Sua conta foi removida com sucesso!",
+							"Excluir Conta",Messagebox.OK,Messagebox.INFORMATION);
+				} catch (InterruptedException e1) {
+					e1.printStackTrace();
+				}
+				logOut();
+			}
+		}
+		else{
+			Messagebox.show("Falha de autenticação! A senha digitada não corresponde " +
+					"à sua senha.","Excluir Conta",Messagebox.OK,Messagebox.ERROR);
+		}
+	}
+	
+	/**
+	 * Botao "Voltar"
+	 */
+	public void goBack(){
+		if( !authenticated ){
+			Executions.sendRedirect("/unauthorized.zul");
+			return;
+		}
+		Executions.sendRedirect("/admin_main.zul");
+	}
+}

@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/11/trunk/sgdu/src/br/ufma/sgdu/window
+END
+LoginWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/10/trunk/sgdu/src/br/ufma/sgdu/window/LoginWindow.java
+END
+SGDUSecureWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/14/trunk/sgdu/src/br/ufma/sgdu/window/SGDUSecureWindow.java
+END
+AdminNewAccWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/15/trunk/sgdu/src/br/ufma/sgdu/window/AdminNewAccWindow.java
+END
+MainSearchWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/14/trunk/sgdu/src/br/ufma/sgdu/window/MainSearchWindow.java
+END
+AdminPasswordWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/12/trunk/sgdu/src/br/ufma/sgdu/window/AdminPasswordWindow.java
+END
+EditDocWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/15/trunk/sgdu/src/br/ufma/sgdu/window/EditDocWindow.java
+END
+ImageViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/14/trunk/sgdu/src/br/ufma/sgdu/window/ImageViewer.java
+END
+EditAccWindow2.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/15/trunk/sgdu/src/br/ufma/sgdu/window/EditAccWindow2.java
+END
+AdminSelfRemoveWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/15/trunk/sgdu/src/br/ufma/sgdu/window/AdminSelfRemoveWindow.java
+END
+AdminWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/15/trunk/sgdu/src/br/ufma/sgdu/window/AdminWindow.java
+END
+EditAccWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/15/trunk/sgdu/src/br/ufma/sgdu/window/EditAccWindow.java
+END
+AdminUploadWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/15/trunk/sgdu/src/br/ufma/sgdu/window/AdminUploadWindow.java
+END
+HtmlViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/14/trunk/sgdu/src/br/ufma/sgdu/window/HtmlViewer.java
+END
+PDFViewer.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/14/trunk/sgdu/src/br/ufma/sgdu/window/PDFViewer.java
+END
+RemoveAccWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/13/trunk/sgdu/src/br/ufma/sgdu/window/RemoveAccWindow.java
+END
+AdminTextEditorWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/14/trunk/sgdu/src/br/ufma/sgdu/window/AdminTextEditorWindow.java
+END
+SearchWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/14/trunk/sgdu/src/br/ufma/sgdu/window/SearchWindow.java
+END

@@ -1,0 +1,132 @@
+<?page title="SGDU - Painel de Controle do Administrador" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window border="none" id="winAdmin" width="100%" use="br.ufma.sgdu.window.EditAccWindow">
+<div align="center">
+<groupbox width="780px" height="600px" id="groupbox">
+<div>
+<separator height="15px"/>
+<tablelayout columns="4" width="780px">
+	<tablechildren width="75px">
+		<panel>
+			<panelchildren>
+				<hbox>
+					<separator width="20px"/>
+					<image src="images/logoufma.png" width="80px" height="80px"/>
+				</hbox>
+			</panelchildren>
+		</panel>
+	</tablechildren>
+	
+	<tablechildren width="400px">
+		<panel>
+			<panelchildren>
+			<hbox>
+				<separator width="10px"/>
+				<vbox>
+					<separator />
+					<label value="Universidade Federal do Maranhão"
+					style="font-size:17px;font-weight: bold; text-shadow:3px 3px 2px #c9a859"/>
+					<label value="Portal de Normas e Legislações"
+					style="font-size:18px; color:gray; font-weight: bold"/>
+				</vbox>	
+			</hbox>
+			</panelchildren>
+		</panel>
+	</tablechildren>
+	
+	<tablechildren>
+		<panel>
+			<panelchildren>
+			  <div align="right">
+			  <separator/>
+			  <vbox>	
+				<hbox>
+				    <image src="images/user.png"/>
+				    <label value="" style="font-weight:bold; color:gray;" id="admTypeLabel"/>
+					<label value="" style="font-weight:bold; color:gray;" id="admNameLabel"/>	
+				</hbox>
+				<div align="right">
+					<button label="Sair" onClick="winAdmin.logOut()"/>
+			   	</div>
+			  </vbox>
+			  </div>
+			</panelchildren>
+		</panel>
+	</tablechildren>
+	
+	<tablechildren width="20px">
+		<panel>
+			<panelchildren>
+				<separator height="50px" width="10px"/>			
+			</panelchildren>
+		</panel>
+	</tablechildren>		   		
+</tablelayout>
+</div>
+
+<separator height="10px"/>
+
+<div align="left">
+<menubar>
+	<menu label="Cadastro">
+		<menupopup>
+			<menuitem label="Alterar minha senha" onClick="winAdmin.changePassword()"/>
+			<menuitem label="Cadastrar outro administrador" onClick="winAdmin.accCreate()"/>
+			<menuitem label="Editar cadastro de administrador" onClick="winAdmin.accEdit()"/>
+			<menuitem label="Excluir cadastro de administrador" onClick="winAdmin.accRemove()"/>
+			<menuitem label="Excluir minha conta" onClick="winAdmin.deleteAccount()"/>
+		</menupopup>
+	</menu>
+	<menu label="Enviar novo documento">
+		<menupopup>
+			<menuitem label="Fazer upload de arquivo" onClick="winAdmin.upload()"/>
+			<menuitem label="Abrir editor de texto" onClick="winAdmin.textEditor()"/>
+		</menupopup>
+	</menu>
+</menubar>
+
+<separator height="20px"/>
+
+<div align="center">
+
+<groupbox width="750px" height="350px">
+<listbox id="listbox" mold="paging" pageSize="15" model="@{winAdmin.administrators}">
+    	<listhead>
+    		<listheader label="Nome" width="200px" align="center"/>
+        	<listheader label="Login" width="100px" align="center"/>
+        	<listheader label="Tipo" width="50px" align="center"/>
+            <listheader label="E-mail" width="200px" align="center"/>
+            <listheader label="Comentário" width="80px" align="center"/>
+            <listheader label="Editar" width="50px" align="center"/>
+         </listhead>
+         <listitem self="@{each='administrator'}" value="@{administrator}">
+         	<listcell label="@{administrator.formattedName}" style="text-align:left; font-family: Courier, monospace; font-size:13px; font-weight: bold;"/>
+            <listcell label="@{administrator.formattedLogin}" style="text-align:left; font-family: Courier, monospace; font-size:13px; font-weight: bold;"/>
+            <listcell label="@{administrator.typeString}" style="text-align:left; font-family: Courier, monospace; font-size:13px; font-weight: bold;"/>
+            <listcell label="@{administrator.formattedEmail}" style="text-align:left; font-family: Courier, monospace; font-size:13px; font-weight: bold;"/>
+            <listcell>
+            	<div align="center">
+            		<image src="images/comment.png" width="16px" height="16px"
+            			onClick="winAdmin.showComment( self.getParent().getParent().getParent() )"/>
+            	</div>
+            </listcell>
+            <listcell>
+            	<div align="center">
+            		<image src ="images/edit.png" width="16px" height="16px"
+            			onClick="winAdmin.editAdministrator( self.getParent().getParent().getParent() )"/>
+            	</div>
+            </listcell>
+         </listitem>
+    </listbox>
+    </groupbox>
+    <separator height="30px"/>
+    <div align="left">   
+    	<button label="Voltar" image="images/voltar.png" onClick="winAdmin.goBack()"/>
+	</div>
+
+</div>
+</div>
+</groupbox>
+</div>
+</window>
+</zk>

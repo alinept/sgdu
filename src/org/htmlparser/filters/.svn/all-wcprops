@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/filters
+END
+NodeClassFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/filters/NodeClassFilter.java
+END
+TagNameFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/filters/TagNameFilter.java
+END
+NotFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/filters/NotFilter.java
+END
+OrFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/filters/OrFilter.java
+END
+AndFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/filters/AndFilter.java
+END
+IsEqualFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/filters/IsEqualFilter.java
+END
+HasParentFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/filters/HasParentFilter.java
+END

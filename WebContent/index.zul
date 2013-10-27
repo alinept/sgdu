@@ -1,0 +1,41 @@
+<?page title="Portal de Normas e Legislação - UFMA"?>
+<window border="none" id="winSearch" use="br.ufma.sgdu.window.MainSearchWindow">
+
+<zk xmlns:h="http://www.w3.org/1999/xhtml">
+
+<div align="center">
+<separator height="50px"/>
+<groupbox width="500px" height="380px">
+	<vbox align="center" width="400px">
+		<label value="Portal de Normas e Legislações" style="font-size:26px; font-weight: bold; font-style:italic; text-shadow:5px 5px 4px #c9a859"/>
+	</vbox>
+	<separator height="15px"/>
+	<vbox>
+		<div align="center">
+			<h:a href="http://www.ufma.br" width="150px" height="150px">
+				<image src="images/logoufma.png" width="150px" height="150px"/>
+			</h:a>
+		</div>
+		<separator height="10px"/>
+		<textbox width="430px" style="font-size:14px" id="textboxSearch"/>
+		<div align="left">
+			<label value="Tipo de busca:"/>
+			<checkbox label="Por Título" checked="true" id="checkboxTitle"/>
+			<checkbox label="Por Descrição" checked="true" id="checkboxDescription"/>
+			<checkbox label="Por Conteúdo" checked="false" id="checkboxContent"/>
+			<space width="25px"/>
+			<image src="images/ajuda.gif" width="20px" height="20px" onClick="winSearch.showHelp()"/>
+		</div>
+		<div align="center">
+			<button label="Pesquisar Documento" width="100px" height="28px" style="font-size: 14px" onClick="winSearch.searchDocument()"/>
+		</div>
+	</vbox>
+	<vbox align="center">
+			<separator height="15px"/>
+			<label value="Universidade Federal do Maranhão" style="font-size:10px; font-weight: bold"/>
+			<label value="Developers: Bruno Froz, Julio Filho" style="font-size:10px; font-style:italic"/>
+	</vbox>
+</groupbox>
+</div>
+</zk>
+</window>

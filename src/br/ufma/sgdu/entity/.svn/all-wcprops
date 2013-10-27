@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/11/trunk/sgdu/src/br/ufma/sgdu/entity
+END
+Administrator.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/15/trunk/sgdu/src/br/ufma/sgdu/entity/Administrator.java
+END
+Document.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/15/trunk/sgdu/src/br/ufma/sgdu/entity/Document.java
+END
+DocumentFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/12/trunk/sgdu/src/br/ufma/sgdu/entity/DocumentFile.java
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/nodes
+END
+TagNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/nodes/TagNode.java
+END
+RemarkNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/nodes/RemarkNode.java
+END
+AbstractNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/nodes/AbstractNode.java
+END
+TextNode.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/nodes/TextNode.java
+END

@@ -1,0 +1,194 @@
+<?page title="SGDU - Painel de Controle do Administrador" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window border="none" id="winAdmin" width="100%" use="br.ufma.sgdu.window.AdminNewAccWindow">
+<div align="center">
+<groupbox width="780px" height="800px" id="groupbox">
+<div>
+<separator height="15px"/>
+<tablelayout columns="4" width="780px">
+	<tablechildren width="75px">
+		<panel>
+			<panelchildren>
+				<hbox>
+					<separator width="20px"/>
+					<image src="images/logoufma.png" width="80px" height="80px"/>
+				</hbox>
+			</panelchildren>
+		</panel>
+	</tablechildren>
+	
+	<tablechildren width="400px">
+		<panel>
+			<panelchildren>
+			<hbox>
+				<separator width="10px"/>
+				<vbox>
+					<separator />
+					<label value="Universidade Federal do Maranhão"
+					style="font-size:17px;font-weight: bold; text-shadow:3px 3px 2px #c9a859"/>
+					<label value="Portal de Normas e Legislações"
+					style="font-size:18px; color:gray; font-weight: bold"/>
+				</vbox>	
+			</hbox>
+			</panelchildren>
+		</panel>
+	</tablechildren>
+	
+	<tablechildren>
+		<panel>
+			<panelchildren>
+			  <div align="right">
+			  <separator/>
+			  <vbox>	
+				<hbox>
+				    <image src="images/user.png"/>
+				    <label value="" style="font-weight:bold; color:gray;" id="admTypeLabel"/>
+					<label value="" style="font-weight:bold; color:gray;" id="admNameLabel"/>	
+				</hbox>
+				<div align="right">
+					<button label="Sair" onClick="winAdmin.logOut()"/>
+			   	</div>
+			  </vbox>
+			  </div>
+			</panelchildren>
+		</panel>
+	</tablechildren>
+	
+	<tablechildren width="20px">
+		<panel>
+			<panelchildren>
+				<separator height="50px" width="10px"/>			
+			</panelchildren>
+		</panel>
+	</tablechildren>		   		
+</tablelayout>
+</div>
+
+<separator height="10px"/>
+
+<div align="left">
+<menubar>
+	<menu label="Cadastro">
+		<menupopup>
+			<menuitem label="Alterar minha senha" onClick="winAdmin.changePassword()"/>
+			<menuitem label="Cadastrar outro administrador" onClick="winAdmin.accCreate()"/>
+			<menuitem label="Editar cadastro de administrador" onClick="winAdmin.accEdit()"/>
+			<menuitem label="Excluir cadastro de administrador" onClick="winAdmin.accRemove()"/>
+			<menuitem label="Excluir minha conta" onClick="winAdmin.deleteAccount()"/>
+		</menupopup>
+	</menu>
+	<menu label="Enviar novo documento">
+		<menupopup>
+			<menuitem label="Fazer upload de arquivo" onClick="winAdmin.upload()"/>
+			<menuitem label="Abrir editor de texto" onClick="winAdmin.textEditor()"/>
+		</menupopup>
+	</menu>
+</menubar>
+
+<separator height="10px"/>
+
+<div align="center">
+	<vbox align="center">
+	<label value="Preencha os campos abaixo para o cadastro de um novo administrador."/>
+	<label value="Os campos assinalados com '*' são de preenchimento obrigatório."/>
+	</vbox>
+</div>
+
+<separator height="10px"/>
+
+<groupbox>
+	<caption label="Nome do Administrador *"/>
+	<vbox>
+	<label value="Digite aqui o nome completo do novo administrador, sem abreviações:"
+			style="color:gray; font-size:10px"/>
+	<textbox width="740px" id="nameTextBox"/>
+	</vbox>
+</groupbox>
+
+<groupbox>
+	<caption label="Login *"/>
+	<vbox>
+	<label value="Digite aqui o login do novo administrador. Esse campo não poderá ser 
+					modificado posteriormente:"
+			style="color:gray; font-size:10px"/>
+	<textbox id="loginTextBox"/>
+	</vbox>
+</groupbox>
+
+<groupbox>
+	<caption label="Senha *"/>
+	<vbox>
+	<label value="Digite aqui a senha inicial do novo administrador. Essa senha poderá ser 
+				alterada pelo próprio administrador, posteriormente:"
+			style="color:gray; font-size:10px"/>
+	<hbox>
+		<textbox id="passwdTextBox" type="text"/>
+		<separator width="20px"/>
+		<checkbox label="Mostrar Senha" checked="true" onCheck="winAdmin.changePasswordVisibility()"/>
+	</hbox>
+	</vbox>
+</groupbox>
+
+<groupbox>
+	<caption label="E-mail"/>
+	<vbox>
+	<label value="E-mail do novo administrador:" style="color:gray; font-size:10px"/>
+	<textbox width="740px" id="emailTextBox"/>
+	</vbox>
+</groupbox>
+
+<groupbox>
+	<caption label="Comentário"/>
+	<vbox>
+	<label value="Um comentário sobre quem é o novo administrador. Ex.: 'Supervisor do departamento X',
+	 				ou 'Secretário da coordenação Y', etc."
+			style="color:gray; font-size:10px"/>
+	<textbox width="740px" height="30px" multiline="true" id="commentTextBox"/>
+	</vbox>
+</groupbox>
+
+<groupbox>
+	<caption label="Tipo de Cadastro *"/>
+	<radiogroup orient="vertical" id="typeAccRadioGroup">
+		<hbox>
+			<radio label="Administrador Comum" checked="true"/>
+			<separator width="10px"/>
+			<vbox>
+				<label value="O Administrador Comum tem permissão para inserir novos documentos 
+							no sistema."
+					style="color:gray;"/>
+				<label value="Pode, posteriormente, editar os dados e remover arquivos 
+							que ele próprio tenha enviado."
+					style="color:gray;"/>
+			</vbox>
+		</hbox>
+		<separator height="20px"/>
+		<hbox>
+			<radio label="Super Administrador"/>
+			<separator width="21px"/>
+			<vbox>
+				<label value="O Super Administrador também tem permissão para inserir novos
+						documentos, porém"
+					style="color:gray;"/>
+				<label value="pode editar e remover quaisquer documentos do sistema."
+					style="color:gray;"/>
+				<label value="Pode ainda cadastrar, editar os dados e remover outros administradores."
+					style="color:gray;"/>
+			</vbox>
+		</hbox>
+	</radiogroup>
+</groupbox>
+
+<separator height="10px"/>
+	<div align="left">   
+    	<button label="Voltar" image="images/voltar.png" onClick="winAdmin.goBack()"/>
+	</div>
+
+<div align="center">
+	<button label="Cadastrar Novo Administrador" style="font-size:14px;" onClick="winAdmin.register()"/>
+</div>
+</div>
+</groupbox>
+</div>
+</window>
+</zk>

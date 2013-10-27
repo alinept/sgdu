@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser
+END
+Remark.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/Remark.java
+END
+Attribute.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/Attribute.java
+END
+Text.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/Text.java
+END
+Node.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/Node.java
+END
+PrototypicalNodeFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/PrototypicalNodeFactory.java
+END
+NodeFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/NodeFilter.java
+END
+Tag.java
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/Tag.java
+END
+Parser.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/Parser.java
+END
+NodeFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/NodeFactory.java
+END

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/http
+END
+ConnectionMonitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/http/ConnectionMonitor.java
+END
+HttpHeader.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/http/HttpHeader.java
+END
+Cookie.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/http/Cookie.java
+END
+ConnectionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/http/ConnectionManager.java
+END

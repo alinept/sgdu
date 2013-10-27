@@ -1,0 +1,53 @@
+<?page title="SGDU - Resultado da Pesquisa" contentType="text/html;charset=UTF-8"?>
+<zk xmlns:h="http://www.w3.org/1999/xhtml">
+<window border="none" id="winSearch" use="br.ufma.sgdu.window.SearchWindow">
+<vbox>
+	<separator height="30px"/>
+	<hbox>
+		<separator width="50px"/>
+		<box width="750px" style="padding: 10px 10px 10px 10px; border: 1px solid grey">
+			<hbox width="100%" align="center">
+				<image src="images/logoufma.png" width="130px" height="130px"/>
+				<vbox>
+					<label value="Portal de Normas e Legislações" style="font-size:24px; font-weight: bold; font-style:italic; text-shadow:5px 5px 4px #c9a859"/>
+					<separator height="10px"/>
+					<textbox width="430px" style="font-size:14px" id="textboxSearch"/>
+					<div align="left">
+						<label value="Tipo de busca:"/>
+						<checkbox label="Por Título" id="checkboxTitle"/>
+						<checkbox label="Por Descrição" id="checkboxDescription"/>
+						<checkbox label="Por Conteúdo" id="checkboxContent"/>
+						<space width="25px"/>
+						<image src="images/ajuda.gif" width="20px" height="20px" onClick="winSearch.showHelp()"/>
+					</div>
+					<div align="center">
+						<button label="Pesquisar Documento" width="100px" height="28px" style="font-size: 14px" onClick="winSearch.searchDocument()"/>
+					</div>
+				</vbox>
+			</hbox>
+		</box>
+	</hbox>
+	<separator height="5px"/>
+	<hbox>
+		<separator width="50px"/>
+		<label style="font-size: 10px" id="headLabel"/>
+	</hbox>
+	<separator height="15px"/>
+</vbox>
+<div align="left">
+	<hbox>
+		<separator width="50px"/>
+		<vbox width="750px" id="resultsVBox"/>
+	</hbox>
+	<hbox>
+		<space width="50px"/>
+		<div align="center" width="750px">
+		<h:hr/>
+		<button label="Página Anterior" id="previousButton" onClick="winSearch.previousPage()"/>
+		<button label="Próxima Página" id="nextButton" onClick="winSearch.nextPage()"/>
+	</div>
+	</hbox>
+	<separator height="20px"/>
+</div>
+</window>
+</zk>

@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/util
+END
+NodeIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/util/NodeIterator.java
+END
+NodeList.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/util/NodeList.java
+END
+ParserFeedback.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/util/ParserFeedback.java
+END
+DefaultParserFeedback.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/util/DefaultParserFeedback.java
+END
+SimpleNodeIterator.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/util/SimpleNodeIterator.java
+END
+ChainedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/util/ChainedException.java
+END
+CharacterReference.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/util/CharacterReference.java
+END
+EncodingChangeException.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/util/EncodingChangeException.java
+END
+IteratorImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/util/IteratorImpl.java
+END
+ParserException.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/util/ParserException.java
+END
+ParserUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/util/ParserUtils.java
+END
+Translate.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/util/Translate.java
+END

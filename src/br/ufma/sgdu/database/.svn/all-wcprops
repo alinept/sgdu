@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/11/trunk/sgdu/src/br/ufma/sgdu/database
+END
+DbDocResearcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/15/trunk/sgdu/src/br/ufma/sgdu/database/DbDocResearcher.java
+END
+DatabaseConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/5/trunk/sgdu/src/br/ufma/sgdu/database/DatabaseConnection.java
+END
+DbDocManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/14/trunk/sgdu/src/br/ufma/sgdu/database/DbDocManager.java
+END
+DbAccManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/13/trunk/sgdu/src/br/ufma/sgdu/database/DbAccManager.java
+END
+DbAccGate.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/13/trunk/sgdu/src/br/ufma/sgdu/database/DbAccGate.java
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/scanners
+END
+TagScanner.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/scanners/TagScanner.java
+END
+CompositeTagScanner.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/scanners/CompositeTagScanner.java
+END
+Scanner.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/scanners/Scanner.java
+END
+ScriptDecoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/scanners/ScriptDecoder.java
+END
+StyleScanner.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/scanners/StyleScanner.java
+END
+ScriptScanner.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/scanners/ScriptScanner.java
+END

@@ -1,0 +1,221 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags
+END
+TableHeader.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/TableHeader.java
+END
+FrameSetTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/FrameSetTag.java
+END
+DoctypeTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/DoctypeTag.java
+END
+OptionTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/OptionTag.java
+END
+TableColumn.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/TableColumn.java
+END
+TextareaTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/TextareaTag.java
+END
+ProcessingInstructionTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/ProcessingInstructionTag.java
+END
+BaseHrefTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/BaseHrefTag.java
+END
+BulletList.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/BulletList.java
+END
+TableTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/TableTag.java
+END
+DefinitionList.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/DefinitionList.java
+END
+FrameTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/FrameTag.java
+END
+Bullet.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/Bullet.java
+END
+JspTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/JspTag.java
+END
+LinkTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/LinkTag.java
+END
+BodyTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/BodyTag.java
+END
+HeadingTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/HeadingTag.java
+END
+StyleTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/StyleTag.java
+END
+DefinitionListBullet.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/DefinitionListBullet.java
+END
+HeadTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/HeadTag.java
+END
+FormTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/FormTag.java
+END
+ScriptTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/ScriptTag.java
+END
+Span.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/Span.java
+END
+ParagraphTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/ParagraphTag.java
+END
+ObjectTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/ObjectTag.java
+END
+Html.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/Html.java
+END
+SelectTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/SelectTag.java
+END
+LabelTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/LabelTag.java
+END
+TitleTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/TitleTag.java
+END
+ImageTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/ImageTag.java
+END
+TableRow.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/TableRow.java
+END
+AppletTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/AppletTag.java
+END
+MetaTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/MetaTag.java
+END
+Div.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/Div.java
+END
+InputTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/InputTag.java
+END
+CompositeTag.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/12/trunk/sgdu/src/org/htmlparser/tags/CompositeTag.java
+END
