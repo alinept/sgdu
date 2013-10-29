@@ -10,6 +10,7 @@ import org.jdom.Document;
 import org.jdom.Element;
 import org.jdom.input.SAXBuilder;
 //alteracao
+//teste joao
 /**
  * <b>DatabaseConnection</b><br/>
  * Classe responsavel por realizar a conexao com o banco de dados.
