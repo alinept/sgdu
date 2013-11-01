@@ -27,6 +27,7 @@ public class Document {
 	protected Date uploadDate;
 	protected String owner;
 	protected short type;
+	protected List<Tag> tags;	
 	
 	public Document(int id, String title, String description,
 			Date expeditionDate, Date uploadDate, String owner, short type) {
@@ -112,4 +113,14 @@ public class Document {
 	public short getType(){
 		return type;
 	}
+
+	public List<Tag> getTags() {
+		return tags;
+	}
+
+	public void setTags(List<Tag> tags) {
+		this.tags = tags;
+	}
+	
+	
 }
